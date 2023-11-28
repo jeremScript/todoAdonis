@@ -2,26 +2,26 @@
 
 I had some troubleshoot for isntalling react/inertia with adonis so i want to share this.
 
-** Create your project **
+**Create your project**
 
 ```
 npm init adonis-ts-app@latest my-project-name
 
 ```
-** Go to directorie project **
+**Go to directorie project**
 
 ```
 cd my-project-name
 
 ```
-** Install inertiaJS for adonis **
+**Install inertiaJS for adonis**
 
 ```
     npm i @eidellev/inertia-adonisjs@7.4.1
 
 ```
 
-** Create configuration file for inertiaJS adonis **
+**Create configuration file for inertiaJS adonis**
 
 ```
 
@@ -29,7 +29,7 @@ cd my-project-name
 
 ```
 
-** Install loader for react **
+**Install loader for react**
 
 
 ```
@@ -37,7 +37,7 @@ cd my-project-name
 
 ```
 
-** Add this lines in webpack.config.js in root project directorie **
+**Add this lines in webpack.config.js in root project directorie**
 
 ```
     Encore.addEntry('app', './resources/js/app.js')
@@ -46,7 +46,7 @@ cd my-project-name
 
 ```
 
-** Create tsconfig.json file in ./resources/js **
+**Create tsconfig.json file in ./resources/js**
 
 ```
     {
@@ -60,7 +60,7 @@ cd my-project-name
 
 ```
 
-** Add this lines in ./tsconfig.json **
+**Add this lines in ./tsconfig.json**
 
 ```
     "lib": ["DOM"],
@@ -68,7 +68,7 @@ cd my-project-name
 
 ```
 
-** Add this lines ./start/kernel.ts **
+**Add this lines ./start/kernel.ts**
 
 ```
 Server.middleware.register([
@@ -78,14 +78,14 @@ Server.middleware.register([
 
 ```
 
-** Install react and react dom **
+**Install react and react dom**
 
 ```
     npm i react react-dom
 
 ```
 
-** Add this lines in ./resources/js/app.js **
+**Add this lines in ./resources/js/app.js**
 
 ```
     import React from 'react'
@@ -101,14 +101,14 @@ createInertiaApp({
 
 ```
 
-** Update package **
+**Update package**
 
 ```
     npm update
 
 ```
 
-** Run your project **
+**Run your project**
 
 ```
     node ace serve --watch
