@@ -10,20 +10,20 @@ npm init adonis-ts-app@latest my-project-name
 ```
 ** Go to directorie project **
 
-````
+```
 cd my-project-name
 
 ```
 ** Install inertiaJS for adonis **
 
-````
+```
     npm i @eidellev/inertia-adonisjs@7.4.1
 
 ```
 
 ** Create configuration file for inertiaJS adonis **
 
-````
+```
 
     node ace configure @eidellev/inertia-adonisjs
 
